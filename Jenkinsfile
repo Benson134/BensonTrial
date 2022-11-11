@@ -5,7 +5,7 @@ pipeline {
     stage('Stage 1') {
       steps {
         script {
-          echo 'Stage 1'
+          echo 'Hello World'
         }
       }
     }
@@ -13,10 +13,21 @@ pipeline {
     stage('Stage 2') {
       steps {
         script {
-          echo 'Stage 2'
+          echo 'Build Hello World'
         }
       }
     }
+    stage('Stage 3') {
+        steps {
+            script {
+                echo 'Test Hello World'
+            }
+        }
+    }
+    stage('Stage 3') {
+        steps {
+            script {
+                echo 'Deploy Hello World'
 
   }
 }
